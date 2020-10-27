@@ -1,0 +1,130 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('./joker.png');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    font-family: Montserrat;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 20px;
+    padding-top: 11%;
+    float: right;
+    margin-right: 5%;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    padding-top: 10%;
+    margin-bottom: 0;
+}
+h4{
+    text-align: justify;
+    margin-left: 41%;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4%;
+    font-family: josefin-sans ;
+}
+.img{
+    float: right;
+    padding:10px 15px;
+    margin-right: 5%;
+    width: 100px;
+    height: 40px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:21%;
+
+}
+
+.img2{
+    width: 100%;
+    height: 300px;
+}
+
+.img3{
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+}
+
+.grid-container {
+    margin:auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+
+
+
+  .grid-container1{
+      margin: auto;
+      display: grid;
+      width:80%;
+      grid-template-columns: repeat(2,auto) ;
+  }
+
+  @media(max-width:500px){
+      .grid-container1{
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-areas: 
+          "header1"
+          "p1"
+          "header2"
+          "p2";
+      }
+
+      .header1{
+          grid-area: header1;
+      }
+
+      .p1{
+          grid-area: p1;
+      }
+      .header2{
+          grid-area: header2;
+      }
+      .p2{
+          grid-area: p2;
+      }
+
+      .dummy h1{
+          font-size: 50px;
+      }
+      .dummy h4{
+          font-size: 10px;
+          margin-left: 0;
+          text-align: center;
+      }
+
+      .dummy p{
+          font-size: 10px;
+      }
+      body{
+          background-size: 200px;
+      }
+  }
+  
